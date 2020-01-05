@@ -1,4 +1,5 @@
 @import url("https://hello.myfonts.net/count/2c86e1");
+
 .Justifier {
   font-size: 5%;
   line-height: 0px;
@@ -143,6 +144,7 @@ iframe {
   border: none;
 }
 ul {
+  
   list-style-type: none;
 }
 ::-moz-selection {
@@ -156,11 +158,11 @@ ul {
 .title {
   margin: 20px 0 60px;
   color: #ffffff;
-  font-family: "Geometria-Medium", Arial, sans-serif;
+  font-family: 'Squada One', cursive;
   font-size: 48px;
   font-weight: 100;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
+
 }
 .container h1 {
   position: relative;
@@ -175,7 +177,7 @@ ul {
   box-sizing: border-box;
   margin-bottom: 1em;
   color: #d3d3d3;
-  font-family: "PT Sans", Tahoma, sans-serif;
+  font-family: 'Squada One', cursive;
   font-size: 1.09em;
   font-weight: 400;
 }
@@ -208,7 +210,7 @@ ul {
   padding: 1.66em 0 0;
   margin: 0 auto;
   color: #ffffff;
-  font: 24px/1.2 "PT Sans", Tahoma, sans-serif;
+  font-family: 'Squada One', cursive;
   text-align: left;
 }
 @media (max-width: 1280px) {
@@ -231,14 +233,7 @@ ul {
 .container:last-child {
   padding-bottom: 4em;
 }
-@font-face {
-  font-family: "Geometria-Medium";
-  src: url("../fonts/geometria/2C86E1_0_0.eot");
-  src: url("../fonts/geometria/2C86E1_0_0-.eot#iefix")
-      format("embedded-opentype"),
-    url("../fonts/geometria/2C86E1_0_0.woff2") format("woff2"),
-    url("../fonts/geometria/2C86E1_0_0.woff") format("woff"),
-    url("../fonts/geometria/2C86E1_0_0.ttf") format("truetype");
+
   font-weight: 400;
   font-style: normal;
 }
@@ -261,7 +256,6 @@ ul {
   border: none;
   color: #ffffff;
   font-size: 18px;
-  text-transform: lowercase;
   text-decoration: none;
 }
 .link-st:after {
@@ -271,7 +265,7 @@ ul {
   z-index: 1;
   width: 100%;
   height: 0;
-  border-bottom: 2px solid #d3d3d3;
+
   content: "";
   -webkit-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
   -moz-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
@@ -347,7 +341,7 @@ ul {
   height: 75%;
   width: 100%;
   background-color: #131313;
-  font-family: "Geometria-Medium", Arial, sans-serif;
+  font-family: 'Squada One', cursive;
   font-size: 1.125em;
   line-height: 1.33;
   text-align: left;
@@ -410,7 +404,7 @@ ul {
   margin: 0 0 0.85em;
   color: white;
   font-size: inherit;
-  font-family: "PT Sans", Tahoma, sans-serif;
+  font-family: 'Squada One', cursive;
 }
 @media (max-height: 650px) {
   .Map-contacts > p {
@@ -511,7 +505,8 @@ body:last-child .Map-toggler {
   width: 100%;
   height: 70px;
   color: #ffffff;
-  font-family: "PT Sans", Tahoma, sans-serif;
+  font-size: 1.8em;
+  font-family: 'Squada One', cursive;
   font-size: 10px;
   font-style: normal;
   text-align: center;
@@ -593,7 +588,8 @@ body:last-child .Map-toggler {
 .Footer .link-st {
   margin-top: 0.23em;
   margin-bottom: 0.23em;
-  font: 18px "PT Sans", Tahoma, sans-serif;
+  font-size: 1.8em;
+  font-family: 'Squada One', cursive;
   color: white;
 }
 @media (max-width: 600px) {

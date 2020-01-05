@@ -6,7 +6,7 @@
 
 /* Hover over a card to flip, can tab too. */
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
+
 
 /* default */
 *,
@@ -28,7 +28,7 @@ body {
   align-items: center;
 
   background: hsl(220, 10%, 12%);
-  font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Squada One', cursive;
 }
 
 /* .flip-card-container */
@@ -46,7 +46,7 @@ body {
 
   -webkit-perspective: 1000px;
 
-          perspective: 1000px;
+  perspective: 1000px;
 }
 
 /* .flip-card */
@@ -56,15 +56,15 @@ body {
 
   position: relative;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  transition: .6s .1s;
+  transform-style: preserve-3d;
+  transition: 0.6s 0.1s;
 }
 
 /* hover state */
 .flip-card-container:hover .flip-card,
 .flip-card-container:focus-within .flip-card {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* .card-... */
@@ -73,7 +73,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 24px;
-
+  border: 2px solid #000000;
   background: var(--dark);
   position: absolute;
   top: 0;
@@ -82,7 +82,7 @@ body {
 
   -webkit-backface-visibility: hidden;
 
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 
   display: flex;
   justify-content: center;
@@ -92,14 +92,14 @@ body {
 /* .card-front */
 .card-front {
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
   z-index: 2;
 }
 
 /* .card-back */
 .card-back {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   z-index: 1;
 }
 
@@ -122,43 +122,37 @@ figure,
 /* img */
 img {
   height: 100%;
-
 }
 
-.img-radius{
-    border-radius: 24px;
+.img-radius {
+  border-radius: 24px;
 }
 
 /* figcaption */
 figcaption {
+  font-size: 1.5em;
   display: block;
-
   width: auto;
   margin-top: 12%;
   padding: 8px 22px;
-
   font-weight: bold;
   line-height: 1.6;
-  letter-spacing: 2px;
-  word-spacing: 6px;
   text-align: right;
-
   position: absolute;
   top: 0;
   right: 12px;
-
-  color: var(--white-1);
-  background: hsla(var(--hue), 25%, 10%, .5);
+  color: black;
+  background: transparent;
 }
 
 /* .img-bg */
 .img-bg {
-  background: hsla(var(--hue), 50%, 50%, .0);
+  background: hsla(var(--hue), 50%, 50%, 0);
 }
 
 .card-front .img-bg {
   -webkit-clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
-          clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+  clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
 }
 
 .card-front .img-bg::before {
@@ -168,7 +162,7 @@ figcaption {
   top: 34%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(18deg);
-          transform: translate(-50%, -50%) rotate(18deg);
+  transform: translate(-50%, -50%) rotate(18deg);
 
   width: 100%;
   height: 6px;
@@ -176,12 +170,12 @@ figcaption {
   border-left-color: transparent;
   border-right-color: transparent;
 
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .card-back .img-bg {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
 }
 
 /* hover state */
@@ -191,55 +185,9 @@ figcaption {
   border-right-color: var(--primary);
 }
 
-/* ul */
-ul {
-  padding-top: 50%;
-  margin: 0 auto;
-  width: 70%;
-  height: 100%;
-
-  list-style: none;
-  color: var(--white-1);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/* li */
-li {
-  width: 100%;
-  margin-top: 12px;
-  padding-bottom: 12px;
-
-  font-size: 14px;
-  text-align: center;
-
-  position: relative;
-}
-
-li:nth-child(2n) {
-  color: var(--white-2);
-}
-
-li:not(:last-child)::after {
-  content: "";
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
-  height: 1px;
-
-  background: currentColor;
-  opacity: .2;
-}
-
 /* button */
 button {
-  font-family: inherit;
+font-family: 'Squada One', cursive;
   font-weight: bold;
   color: white;
   letter-spacing: 2px;
@@ -247,7 +195,7 @@ button {
   border: 1px solid #d3d3d3;
 
   background: transparent;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -256,19 +204,158 @@ button:focus {
   color: black;
   background: #d3d3d3;
   border-color: #d3d3d3;
-
 }
 
 button:active {
   -webkit-transform: translate(2px);
-          transform: translate(2px);
+  transform: translate(2px);
 }
 
+.logo-top {
+  z-index: 1;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
-.logo-top{
-    z-index: 1;
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+/*footer*/
+
+.Footer {
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  color: #ffffff;
+  font-family: 'Squada One', cursive;
+  font-size: 10px;
+  font-style: normal;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .Footer {
+    top: 0;
+    height: 5%;
+    padding-bottom: 40px;
+    background: #151515;
   }
+  .index-page .Footer {
+    width: 100%;
+    background: black;
+    top: -4px;
+  }
+}
+.index-page .Footer {
+  position: fixed;
+  bottom: -1px;
+}
+.portfolio-work .Footer {
+  display: none;
+}
+.text-page .Footer {
+  background: #151515;
+}
+.Footer-menu {
+  list-style-type: none;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  text-align: justify;
+}
+@media (max-width: 600px) {
+  .Footer-menu {
+    margin-left: 10%;
+    min-width: 0;
+    max-width: 700px;
+    padding-top: 10px;
+    height: 150%;
+    margin-right: 0;
+    text-align: left;
+  }
+  .index-page .Footer-menu {
+    margin-left: 0;
+  }
+}
+.Footer-menu:after {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  content: "";
+}
+.Footer-menu > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  .Footer-menu > li {
+    display: inline;
+    text-align: left;
+    min-width: 500px;
+  }
+}
+.Footer-menu > li:first-child {
+  height: 100%;
+  padding-left: 7.7%;
+}
+@media (max-width: 600px) {
+  .Footer-menu > li:first-child {
+    height: auto;
+    padding-left: 0;
+  }
+}
+.Footer-menu > li.last {
+  padding-right: 7.7%;
+}
+.Footer .link-st {
+  margin-top: 0.23em;
+  margin-bottom: 0.23em;
+  font-size: 1.8em;
+  font-family: 'Squada One', cursive;
+  color: white;
+}
+@media (max-width: 600px) {
+  .Footer-logoWr {
+    padding-left: 0%;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+}
+
+.link-st {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: 0.66em;
+    margin-right: 0.66em;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+.link-st:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+
+    content: "";
+    -webkit-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    -moz-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    -o-transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+    transition: border 0.2s linear 0s, bottom 0.2s linear 0s;
+  }
+  .link-st:hover:after {
+    bottom: 38%;
+    border-width: 3px;
+  }
+
+
