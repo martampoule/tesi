@@ -1,15 +1,6 @@
 @font-face {
     font-family: 'eurostile';
-    font-style: normal;
-    font-weight: normal;
-    src: local('eurostile'), url('eurostile.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'EuroStyle Normal';
-    font-style: normal;
-    font-weight: normal;
-    src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
+    src: local('eurostile'), url('../EurostileLT-Condensed.woff') format('woff');
 }
 
 [data-speed] {
