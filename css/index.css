@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'eurostile';
+    font-style: normal;
+    font-weight: normal;
+    src: local('eurostile'), url('eurostile.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'EuroStyle Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
+}
+
 [data-speed] {
     bottom: 0;
 }
@@ -31,7 +45,7 @@
 
 .Parallax {
     color: #000000;
-    font-family: "PT Sans", Tahoma, sans-serif;
+    font-family: "eurostile";
 }
 
 .Parallax a {
@@ -43,7 +57,7 @@
 .Parallax h1,
 .Parallax h2,
 .Parallax .h1 {
-    font: 240% "Geometria-Medium", Arial, sans-serif;
+    font: 240% 'eurostile';
     font-style: normal;
     line-height: 1.2;
     left: auto;
@@ -425,11 +439,11 @@
 }
 
 .Parallax h3 {
-    font: 240% "Geometria-Medium", Arial, sans-serif;
+    font: 240% "Eurostile";
+    font-family: "Eurostile";
     font-style: normal;
     line-height: 1.2;
     left: auto;
-    letter-spacing: 0.075em;
     text-align: left;
 }
 
