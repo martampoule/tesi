@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'Eurostile';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Eurostile'), url('eurostile.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'EuroStyle Normal';
-    font-style: normal;
-    font-weight: normal;
-    src: local('EuroStyle Normal'), url('EuroStyle Normal.woff') format('woff');
-}
-
 .Justifier {
     font-size: 5%;
     line-height: 0px;
