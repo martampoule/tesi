@@ -506,7 +506,7 @@ section {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 46%;
+    margin-top: 46%;
     z-index: 99;
     position: absolute;
 }
